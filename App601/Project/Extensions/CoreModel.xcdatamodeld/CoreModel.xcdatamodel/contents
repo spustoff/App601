@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="HistoryModel" representedClassName="HistoryModel" syncable="YES" codeGenerationType="class">
+        <attribute name="hisChamp" optional="YES" attributeType="String"/>
+        <attribute name="hisDate" optional="YES" attributeType="String"/>
+        <attribute name="hisDescr" optional="YES" attributeType="String"/>
+        <attribute name="hisResult" optional="YES" attributeType="String"/>
+        <attribute name="hisRole" optional="YES" attributeType="String"/>
+        <attribute name="hisType" optional="YES" attributeType="String"/>
+    </entity>
+</model>
