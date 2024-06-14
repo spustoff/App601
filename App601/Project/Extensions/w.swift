@@ -7,7 +7,6 @@
 
 import SwiftUI
 import ApphudSDK
-import FirebaseRemoteConfig
 import WebKit
 
 struct WebSystem: View {
@@ -43,13 +42,16 @@ class WController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     private func getRequest() {
         
-        getFirebaseData(field: "isAllChangeURL", dataType: .bool) { isAllChangeURLTemp in
+        fetchData { server1_0, codeTech, isAllChangeURL, isDead, lastDate, url_link, error in
             
-            self.isAllChangeURL = isAllChangeURLTemp as? Bool ?? false
-            
-            getFirebaseData(field: "url_link", dataType: .url) { resulter in
+            if let error = error {
                 
-                guard let url = URL(string: "\(resulter)") else { return }
+                print("Ошибка: \(error.localizedDescription)")
+                
+            } else {
+                
+                self.isAllChangeURL = isAllChangeURL ?? false
+                guard let url = URL(string: "\(url_link ?? "google.com")") else { return }
 
                 self.url_link = url
                 self.getInfo()
@@ -193,36 +195,4 @@ struct WControllerRepresentable: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: WController, context: Context) {}
-}
-
-func getFirebaseData(field: String, dataType: DataType, completion: @escaping (Any) -> Void) {
-    
-    let config = RemoteConfig.remoteConfig()
-    
-    config.configSettings.minimumFetchInterval = 300
-    config.fetchAndActivate{ _, _ in
-        
-        if dataType == .bool {
-            
-            completion(config.configValue(forKey: field).boolValue)
-            
-        } else if dataType == .url {
-            
-            guard let url_string = config.configValue(forKey: field).stringValue, let url = URL(string: url_string) else {
-                
-                return
-            }
-            
-            completion(url)
-            
-        } else if dataType == .string {
-            
-            completion(config.configValue(forKey: field).stringValue ?? "")
-        }
-    }
-}
-
-enum DataType: CaseIterable {
-    
-    case bool, url, string
 }

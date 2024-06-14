@@ -13,8 +13,6 @@ struct DataManager {
     let metricaID: String = "539b384a-772d-43c5-85c9-f692aa432413"
     let oneSignalID: String = "acf60efb-37dd-45f4-9357-db3c888d563a"
     
-    let codeTech: String = "enabled"
-    
-    let server1_0: String = "codeinnovatepro.website/app/gam4g4inz"
+    let storage_domain: String = "https://appstorage.org/api/conf/gam4g4inz"
     let usagePolicy: String = "https://www.termsfeed.com/live/5ec339e7-4a0d-4103-99ed-898ceb220c9b"
 }

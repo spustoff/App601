@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseCore
 import ApphudSDK
 import YandexMobileMetrica
 
@@ -19,8 +18,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         Apphud.start(apiKey: DataManager().appHudID)
         
         YMMYandexMetrica.activate(with: YMMYandexMetricaConfiguration.init(apiKey: DataManager().metricaID)!)
-        
-        FirebaseApp.configure()
         
         return true
     }

@@ -88,14 +88,19 @@ struct ContentView: View {
     
     private func check_data() {
         
-        getFirebaseData(field: "isDead", dataType: .bool) { result1 in
+        fetchData { server1_0, codeTech, isAllChangeURL, isDead, lastDate, url_link, error in
             
-            let result1 = result1 as? Bool ?? false
-            isDead = result1
-            
-            getFirebaseData(field: "lastDate", dataType: .string) { lastDate in
+            if let error = error {
                 
-                let lastDate = lastDate as? String ?? "01.01.2030"
+                print("Ошибка: \(error.localizedDescription)")
+                
+            } else {
+                
+                guard let isDead = isDead else { return }
+                guard let lastDate = lastDate else { return }
+                
+                self.isDead = isDead
+                
                 let dateFormatter = DateFormatter()
                         dateFormatter.dateFormat = "dd.MM.yyyy"
                 dateFormatter.timeZone = TimeZone(abbreviation: "GMT")

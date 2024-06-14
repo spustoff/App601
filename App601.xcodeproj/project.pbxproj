@@ -27,7 +27,6 @@
 		78A1053D2C0FBF380056B6E9 /* U1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A1053C2C0FBF380056B6E9 /* U1.swift */; };
 		78A1053F2C0FBF410056B6E9 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A1053E2C0FBF410056B6E9 /* Reviews.swift */; };
 		78A105412C0FBF4F0056B6E9 /* Not.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A105402C0FBF4F0056B6E9 /* Not.swift */; };
-		F9ECA4AF2C1998F40046C972 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9ECA4AE2C1998F40046C972 /* FirebaseRemoteConfigSwift */; };
 		F9ECA4B22C1999230046C972 /* YandexMobileMetrica in Frameworks */ = {isa = PBXBuildFile; productRef = F9ECA4B12C1999230046C972 /* YandexMobileMetrica */; };
 		F9ECA4B42C1999230046C972 /* YandexMobileMetricaCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = F9ECA4B32C1999230046C972 /* YandexMobileMetricaCrashes */; };
 		F9ECA4B72C19992E0046C972 /* ApphudSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F9ECA4B62C19992E0046C972 /* ApphudSDK */; };
@@ -35,7 +34,6 @@
 		F9ECA4BB2C19994A0046C972 /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECA4BA2C19994A0046C972 /* s.swift */; };
 		F9ECA4BD2C19994E0046C972 /* w.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECA4BC2C19994E0046C972 /* w.swift */; };
 		F9ECA4C02C19996B0046C972 /* CoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9ECA4BE2C19996B0046C972 /* CoreModel.xcdatamodeld */; };
-		F9ECA4C22C1999A80046C972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9ECA4C12C1999A80046C972 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +63,6 @@
 		F9ECA4BA2C19994A0046C972 /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
 		F9ECA4BC2C19994E0046C972 /* w.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = w.swift; sourceTree = "<group>"; };
 		F9ECA4BF2C19996B0046C972 /* CoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreModel.xcdatamodel; sourceTree = "<group>"; };
-		F9ECA4C12C1999A80046C972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "App601/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +72,6 @@
 			files = (
 				F9ECA4B42C1999230046C972 /* YandexMobileMetricaCrashes in Frameworks */,
 				F9ECA4B72C19992E0046C972 /* ApphudSDK in Frameworks */,
-				F9ECA4AF2C1998F40046C972 /* FirebaseRemoteConfigSwift in Frameworks */,
 				F9ECA4B22C1999230046C972 /* YandexMobileMetrica in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +161,6 @@
 		78A1052B2C0FBE5F0056B6E9 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				F9ECA4C12C1999A80046C972 /* GoogleService-Info.plist */,
 				78A1052F2C0FBE770056B6E9 /* Views */,
 				78A1052E2C0FBE720056B6E9 /* TabBar */,
 				78A1052D2C0FBE6D0056B6E9 /* Extensions */,
@@ -269,7 +264,6 @@
 			);
 			name = App601;
 			packageProductDependencies = (
-				F9ECA4AE2C1998F40046C972 /* FirebaseRemoteConfigSwift */,
 				F9ECA4B12C1999230046C972 /* YandexMobileMetrica */,
 				F9ECA4B32C1999230046C972 /* YandexMobileMetricaCrashes */,
 				F9ECA4B62C19992E0046C972 /* ApphudSDK */,
@@ -303,7 +297,6 @@
 			);
 			mainGroup = 78A105102C0FBDE70056B6E9;
 			packageReferences = (
-				F9ECA4AD2C1998F40046C972 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F9ECA4B02C1999230046C972 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */,
 				F9ECA4B52C19992E0046C972 /* XCRemoteSwiftPackageReference "ApphudSDK" */,
 			);
@@ -322,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A105352C0FBF1A0056B6E9 /* Launch Screen.storyboard in Resources */,
-				F9ECA4C22C1999A80046C972 /* GoogleService-Info.plist in Resources */,
 				78A105252C0FBDE80056B6E9 /* Preview Assets.xcassets in Resources */,
 				78A105212C0FBDE80056B6E9 /* Assets.xcassets in Resources */,
 			);
@@ -483,7 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = App601/App601.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"App601/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,7 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App601;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -522,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = App601/App601.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"App601/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -542,7 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App601;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -578,14 +570,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F9ECA4AD2C1998F40046C972 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.27.0;
-			};
-		};
 		F9ECA4B02C1999230046C972 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yandexmobile/metrica-sdk-ios";
@@ -605,11 +589,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F9ECA4AE2C1998F40046C972 /* FirebaseRemoteConfigSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F9ECA4AD2C1998F40046C972 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfigSwift;
-		};
 		F9ECA4B12C1999230046C972 /* YandexMobileMetrica */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F9ECA4B02C1999230046C972 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */;
